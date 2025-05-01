@@ -8,19 +8,10 @@ import billsRouter from './routes/billsRoutes.js';
 import customerRouter from './routes/customersRoutes.js';
 import productRouter from './routes/productsRoutes.js';
 import userRouter from './routes/userRoutes.js';
-//require('colors');
+// require('colors');
 
 dotenv.config();
 
-//Connect with MongoDB
-// mongoose
-//     .connect(process.env.MONGODB_URI)
-//     .then(() => {
-//         console.log('Connected to DB');
-//     })
-//     .catch(err => {
-//         console.log(err.message);
-//     });
 mongoose.set("strictQuery", true); // to silence the deprecation warning
 console.log("Attempting to connect to MongoDB...");
 mongoose
